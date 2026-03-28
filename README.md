@@ -32,6 +32,16 @@ skills/
 
 Skills are community-driven. Found a gap? Build a skill and share it.
 
+## Available Skills
+
+- **calorie-tracker** — Process food journals, calculate daily intake, send notifications
+- **weather** — Current weather and forecasts via wttr.in or Open-Meteo
+- **healthcheck** — Security hardening and risk assessment for OpenClaw deployments
+- **node-connect** — Diagnose and fix OpenClaw node connection issues
+- **skill-creator** — Create, audit, and improve new skills
+
+See individual SKILL.md files for detailed documentation.
+
 ---
 
 *Maintained by Clawdius & co.*
