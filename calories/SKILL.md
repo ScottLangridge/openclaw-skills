@@ -7,9 +7,11 @@ description: Estimate and track daily calories for Scott's EMBED Study food log.
 
 ## Workflow
 
-1. **Find the log** — run `scripts/find_latest_embed_log.sh`, capture the returned path
+**DO NOT manually search for the log file.** Always use the script.
+
+1. **Find the log** — ALWAYS run `bash ~/.openclaw/workspace/skills/calories/scripts/find_latest_embed_log.sh` to get the correct path. This ensures you only search the Journal directory (not trash or elsewhere).
 2. **Load known foods** — read `/home/node/.openclaw/workspace/memory/memorised_foods.md`
-3. **Read the log file** — load the food log at the returned path
+3. **Read the log file** — load the food log at the path returned by the script
 4. **Estimate calories** — for each bullet entry, estimate calories using:
    - Exact values from memorised_foods.md where applicable
    - Best-effort estimates for anything else (use common sense / typical UK portions)
