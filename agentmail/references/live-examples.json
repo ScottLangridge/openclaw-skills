@@ -1,0 +1,24 @@
+### inboxes list
+GET "https://api.agentmail.to/v0/inboxes": 401 Unauthorized
+{
+  "message": "Unauthorized"
+}
+
+### inboxes retrieve
+GET "https://api.agentmail.to/v0/inboxes/clawdiusmaximusthesecond@agentmail.to": 401 Unauthorized
+{
+  "message": "Unauthorized"
+}
+
+### inboxes:messages list
+GET "https://api.agentmail.to/v0/inboxes/clawdiusmaximusthesecond@agentmail.to/messages": 401 Unauthorized
+{
+  "message": "Unauthorized"
+}
+
+### inboxes:threads list
+GET "https://api.agentmail.to/v0/inboxes/clawdiusmaximusthesecond@agentmail.to/threads": 401 Unauthorized
+{
+  "message": "Unauthorized"
+}
+

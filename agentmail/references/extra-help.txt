@@ -1,0 +1,262 @@
+### agentmail inboxes update --help
+NAME:
+   agentmail inboxes update - Update Inbox
+
+USAGE:
+   agentmail inboxes update
+
+OPTIONS:
+   --inbox-id string                                  ID of inbox.
+   --display-name Display Name <username@domain.com>  Display name: Display Name <username@domain.com>.
+   --help, -h                                         show help
+
+### agentmail inboxes list-metrics --help
+NAME:
+   agentmail inboxes list-metrics - List Metrics
+
+USAGE:
+   agentmail inboxes list-metrics
+
+OPTIONS:
+   --inbox-id string        ID of inbox.
+   --end-timestamp value    End timestamp for the metrics query range.
+   --start-timestamp value  Start timestamp for the metrics query range.
+   --event-type value       List of metric event types to filter by.
+   --help, -h               show help
+
+### agentmail inboxes:threads delete --help
+NAME:
+   agentmail inboxes:threads delete - Delete Thread
+
+USAGE:
+   agentmail inboxes:threads delete
+
+OPTIONS:
+   --inbox-id string   ID of inbox.
+   --thread-id string  ID of thread.
+   --help, -h          show help
+
+### agentmail inboxes:threads get-attachment --help
+NAME:
+   agentmail inboxes:threads get-attachment - Get Attachment
+
+USAGE:
+   agentmail inboxes:threads get-attachment
+
+OPTIONS:
+   --inbox-id string       ID of inbox.
+   --thread-id string      ID of thread.
+   --attachment-id string  ID of attachment.
+   --help, -h              show help
+
+### agentmail inboxes:drafts update --help
+NAME:
+   agentmail inboxes:drafts update - Update Draft
+
+USAGE:
+   agentmail inboxes:drafts update
+
+OPTIONS:
+   --inbox-id string               ID of inbox.
+   --draft-id string               ID of draft.
+   --bcc username@domain.com       Addresses of BCC recipients. In format username@domain.com or `Display Name <username@domain.com>`.
+   --cc username@domain.com        Addresses of CC recipients. In format username@domain.com or `Display Name <username@domain.com>`.
+   --html value                    HTML body of draft.
+   --reply-to username@domain.com  Reply-to addresses. In format username@domain.com or `Display Name <username@domain.com>`.
+   --send-at value                 Time at which to schedule send draft.
+   --subject value                 Subject of draft.
+   --text value                    Plain text body of draft.
+   --to username@domain.com        Addresses of recipients. In format username@domain.com or `Display Name <username@domain.com>`.
+   --help, -h                      show help
+
+### agentmail pods:domains create --help
+NAME:
+   agentmail pods:domains create - Create Domain
+
+USAGE:
+   agentmail pods:domains create
+
+OPTIONS:
+   --pod-id string     ID of pod.
+   --domain string     The name of the domain. (e.g., "example.com")
+   --feedback-enabled  Bounce and complaint notifications are sent to your inboxes.
+   --help, -h          show help
+
+### agentmail pods:domains list --help
+NAME:
+   agentmail pods:domains list - List Domains
+
+USAGE:
+   agentmail pods:domains list
+
+OPTIONS:
+   --pod-id string     ID of pod.
+   --limit value       Limit of number of items returned.
+   --page-token value  Page token for pagination.
+   --help, -h          show help
+
+### agentmail pods:domains delete --help
+NAME:
+   agentmail pods:domains delete - Delete Domain
+
+USAGE:
+   agentmail pods:domains delete
+
+OPTIONS:
+   --pod-id string     ID of pod.
+   --domain-id string  The name of the domain. (e.g., " your-domain.com")
+   --help, -h          show help
+
+### agentmail pods:drafts retrieve --help
+NAME:
+   agentmail pods:drafts retrieve - Get Draft
+
+USAGE:
+   agentmail pods:drafts retrieve
+
+OPTIONS:
+   --pod-id string    ID of pod.
+   --draft-id string  ID of draft.
+   --help, -h         show help
+
+### agentmail pods:drafts list --help
+NAME:
+   agentmail pods:drafts list - List Drafts
+
+USAGE:
+   agentmail pods:drafts list
+
+OPTIONS:
+   --pod-id string     ID of pod.
+   --after value       Timestamp after which to filter by.
+   --ascending value   Sort in ascending temporal order.
+   --before value      Timestamp before which to filter by.
+   --label value       Labels to filter by.
+   --limit value       Limit of number of items returned.
+   --page-token value  Page token for pagination.
+   --help, -h          show help
+
+### agentmail drafts retrieve --help
+NAME:
+   agentmail drafts retrieve - Get Draft
+
+USAGE:
+   agentmail drafts retrieve
+
+OPTIONS:
+   --draft-id string  ID of draft.
+   --help, -h         show help
+
+### agentmail drafts list --help
+NAME:
+   agentmail drafts list - List Drafts
+
+USAGE:
+   agentmail drafts list
+
+OPTIONS:
+   --after value       Timestamp after which to filter by.
+   --ascending value   Sort in ascending temporal order.
+   --before value      Timestamp before which to filter by.
+   --label value       Labels to filter by.
+   --limit value       Limit of number of items returned.
+   --page-token value  Page token for pagination.
+   --help, -h          show help
+
+### agentmail threads retrieve --help
+NAME:
+   agentmail threads retrieve - Get Thread
+
+USAGE:
+   agentmail threads retrieve
+
+OPTIONS:
+   --thread-id string  ID of thread.
+   --help, -h          show help
+
+### agentmail threads list --help
+NAME:
+   agentmail threads list - List Threads
+
+USAGE:
+   agentmail threads list
+
+OPTIONS:
+   --after value         Timestamp after which to filter by.
+   --ascending value     Sort in ascending temporal order.
+   --before value        Timestamp before which to filter by.
+   --include-spam value  Include spam in results.
+   --label value         Labels to filter by.
+   --limit value         Limit of number of items returned.
+   --page-token value    Page token for pagination.
+   --help, -h            show help
+
+### agentmail threads retrieve-attachment --help
+NAME:
+   agentmail threads retrieve-attachment - Get Attachment
+
+USAGE:
+   agentmail threads retrieve-attachment
+
+OPTIONS:
+   --thread-id string      ID of thread.
+   --attachment-id string  ID of attachment.
+   --help, -h              show help
+
+### agentmail metrics list --help
+NAME:
+   agentmail metrics list - List Metrics
+
+USAGE:
+   agentmail metrics list
+
+OPTIONS:
+   --end-timestamp value    End timestamp for the metrics query range.
+   --start-timestamp value  Start timestamp for the metrics query range.
+   --event-type value       List of metric event types to filter by.
+   --help, -h               show help
+
+### agentmail organizations retrieve --help
+NAME:
+   agentmail organizations retrieve - Get the current organization.
+
+USAGE:
+   agentmail organizations retrieve
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail api-keys create --help
+NAME:
+   agentmail api-keys create - Create API Key
+
+USAGE:
+   agentmail api-keys create
+
+OPTIONS:
+   --name string  Name of api key.
+   --help, -h     show help
+
+### agentmail api-keys list --help
+NAME:
+   agentmail api-keys list - List API Keys
+
+USAGE:
+   agentmail api-keys list
+
+OPTIONS:
+   --limit value       Limit of number of items returned.
+   --page-token value  Page token for pagination.
+   --help, -h          show help
+
+### agentmail api-keys delete --help
+NAME:
+   agentmail api-keys delete - Delete API Key
+
+USAGE:
+   agentmail api-keys delete
+
+OPTIONS:
+   --api-key string  ID of api key.
+   --help, -h        show help
+

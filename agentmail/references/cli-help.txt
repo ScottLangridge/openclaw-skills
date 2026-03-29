@@ -1,0 +1,224 @@
+### agentmail --help
+NAME:
+   agentmail - CLI for the agentmail API
+
+USAGE:
+   agentmail [global options] [command [command options]]
+
+VERSION:
+   0.7.4
+
+COMMANDS:
+
+   API RESOURCE:
+     inboxes           
+     inboxes:drafts    
+     inboxes:messages  
+     inboxes:threads   
+     pods              
+     pods:domains      
+     pods:drafts       
+     pods:inboxes      
+     pods:threads      
+     webhooks          
+     api-keys          
+     domains           
+     drafts            
+     metrics           
+     organizations     
+     threads           
+
+GLOBAL OPTIONS:
+   --debug                   Enable debug logging (default: false)
+   --base-url string         Override the base URL for API requests (default: url)
+   --format string           The format for displaying response data (one of: auto, explore, json, jsonl, pretty, raw, yaml) (default: "auto")
+   --format-error string     The format for displaying error data (one of: auto, explore, json, jsonl, pretty, raw, yaml) (default: "auto")
+   --transform string        The GJSON transformation for data output.
+   --transform-error string  The GJSON transformation for errors.
+   --api-key string           [$AGENTMAIL_API_KEY]
+   --environment string      Set the environment for API requests
+   --help, -h                show help
+   --version, -v             print the version
+
+### agentmail inboxes --help
+NAME:
+   agentmail inboxes
+
+USAGE:
+   agentmail inboxes [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   create        Create Inbox
+   retrieve      Get Inbox
+   update        Update Inbox
+   list          List Inboxes
+   delete        Delete Inbox
+   list-metrics  List Metrics
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail inboxes:messages --help
+NAME:
+   agentmail inboxes:messages
+
+USAGE:
+   agentmail inboxes:messages [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   retrieve        Get Message
+   update          Update Message
+   list            List Messages
+   forward         Forward Message
+   get-attachment  Get Attachment
+   get-raw         Get Raw Message
+   reply           Reply To Message
+   reply-all       Reply All Message
+   send            Send Message
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail inboxes:threads --help
+NAME:
+   agentmail inboxes:threads
+
+USAGE:
+   agentmail inboxes:threads [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   retrieve        Get Thread
+   list            List Threads
+   delete          Delete Thread
+   get-attachment  Get Attachment
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail inboxes:drafts --help
+NAME:
+   agentmail inboxes:drafts
+
+USAGE:
+   agentmail inboxes:drafts [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   create    Create Draft
+   retrieve  Get Draft
+   update    Update Draft
+   list      List Drafts
+   delete    Delete Draft
+   send      Send Draft
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail pods --help
+NAME:
+   agentmail pods
+
+USAGE:
+   agentmail pods [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   create    Create Pod
+   retrieve  Get Pod
+   list      List Pods
+   delete    Delete Pod
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail pods:inboxes --help
+NAME:
+   agentmail pods:inboxes
+
+USAGE:
+   agentmail pods:inboxes [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   create    Create Inbox
+   retrieve  Get Inbox
+   list      List Inboxes
+   delete    Delete Inbox
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail pods:threads --help
+NAME:
+   agentmail pods:threads
+
+USAGE:
+   agentmail pods:threads [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   retrieve        Get Thread
+   list            List Threads
+   get-attachment  Get Attachment
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail webhooks --help
+NAME:
+   agentmail webhooks
+
+USAGE:
+   agentmail webhooks [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   create    Create Webhook
+   retrieve  Get Webhook
+   update    Update Webhook
+   list      List Webhooks
+   delete    Delete Webhook
+
+OPTIONS:
+   --help, -h  show help
+
+### agentmail domains --help
+NAME:
+   agentmail domains
+
+USAGE:
+   agentmail domains [command [command options]] 
+
+CATEGORY:
+   API RESOURCE
+
+COMMANDS:
+   create         Create Domain
+   retrieve       Get Domain
+   list           List Domains
+   delete         Delete Domain
+   get-zone-file  Get Zone File
+   verify         Verify Domain
+
+OPTIONS:
+   --help, -h  show help
+
